@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fahad Faisal | Creative Director & Academic Project Studio</title>
+  <meta name="description" content="High-end freelance portfolio for University Presentations, Assignments, Fashion Designing, Art Movements, Brand Identity, and Social Media Strategy."/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400;1,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Dynamic 3D WebGL Background Canvas -->
+  <canvas id="webgl-bg"></canvas>
+
+  <!-- Custom Glow Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Background Ambient Lights -->
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-bottom-right"></div>
+  <div class="ambient-glow glow-center"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-logo">
+        <span class="logo-mark">F</span>
+        <span class="logo-text">FAHAD<span class="accent-dot">.</span>STUDIO</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#calculator" class="nav-link">Price Estimator</a></li>
+        <li><a href="#portfolio" class="nav-link">Work</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#calculator" class="nav-badge-pill">
+          <span class="pulse-dot"></span> Student Rates
+        </a>
+        <a href="https://wa.me/923246714050?text=Hi%20Fahad,%20I%20need%20help%20with%20my%20project/assignment!" target="_blank" class="btn btn-nav-cta" id="navWhatsappBtn">
+          <i class="fab fa-whatsapp"></i>
+          <span>Instant Chat</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-status-pill">
+          <span class="pulse-ring"></span>
+          <span class="status-txt">✦ Available for Urgent Projects &amp; Commissions</span>
+        </div>
+
+        <h1 class="hero-title">
+          Bespoke <span class="gradient-text text-glow">Creative &amp; Academic</span> Studio.
+        </h1>
+
+        <p class="hero-subtitle">
+          Empowering university students and brands with top-grade <strong>Presentations</strong>, 
+          <strong>Assignments</strong>, <strong>Fashion Design Lookbooks</strong>, <strong>Art Movement Studies</strong>, 
+          and <strong>Brand Social Strategy</strong>.
+        </p>
+
+        <!-- Guarantee Ticker Pills -->
+        <div class="hero-guarantees">
+          <div class="guarantee-pill"><i class="fas fa-check-double"></i> 100% Plagiarism Free</div>
+          <div class="guarantee-pill"><i class="fas fa-bolt"></i> 24h Express Delivery</div>
+          <div class="guarantee-pill"><i class="fas fa-star"></i> Distinction Quality</div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#calculator" class="btn btn-primary btn-glow">
+            <span>Calculate Project Price</span>
+            <i class="fas fa-calculator"></i>
+          </a>
+          <a href="https://wa.me/923246714050?text=Hello%20Fahad,%20I%20have%20an%20urgent%20assignment/project%20deadline." target="_blank" class="btn btn-secondary">
+            <i class="fab fa-whatsapp"></i>
+            <span>Order via WhatsApp</span>
+          </a>
+          <a href="#portfolio" class="btn btn-outline">
+            <span>View Portfolio</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+
+        <!-- Live Trust Stats -->
+        <div class="hero-stats-bar">
+          <div class="stat-box">
+            <div class="stat-number-wrap"><span class="stat-counter" data-target="98">0</span>%</div>
+            <p class="stat-label">A+ &amp; Grade A Ratio</p>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-box">
+            <div class="stat-number-wrap"><span class="stat-counter" data-target="140">0</span>+</div>
+            <p class="stat-label">Projects Completed</p>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-box">
+            <div class="stat-number-wrap"><span class="stat-counter" data-target="24">0</span>/7</div>
+            <p class="stat-label">Direct Student Support</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3D Hologram Profile Showcase -->
+      <div class="hero-visual">
+        <div class="profile-3d-card" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+          
+          <!-- Outer 3D Gyro Rings -->
+          <div class="gyro-ring ring-neon-1"></div>
+          <div class="gyro-ring ring-neon-2"></div>
+          <div class="gyro-ring ring-neon-3"></div>
+
+          <!-- Main Portrait Stage -->
+          <div class="portrait-stage">
+            <img src="profile.jpg" alt="Fahad Faisal - Creative Designer" class="portrait-img" id="mainProfilePic" onerror="this.onerror=null; this.src='images/project_fashion.jpg';"/>
+            <div class="portrait-overlay"></div>
+            
+            <div class="portrait-card-header">
+              <span class="badge-role"><i class="fas fa-crown"></i> Lead Creative &amp; Consultant</span>
+              <span class="badge-verified"><i class="fas fa-certificate"></i> Verified Pro</span>
+            </div>
+
+            <div class="portrait-card-footer">
+              <h3 class="designer-name">Fahad Faisal</h3>
+              <p class="designer-tags">Art · Fashion · Media · Presentations</p>
+            </div>
+          </div>
+
+          <!-- 3D Floating Holographic Badges -->
+          <div class="holo-badge holo-1">
+            <div class="holo-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="holo-info">
+              <span class="holo-title">Academic Ace</span>
+              <span class="holo-desc">Zero Plagiarism Decks</span>
+            </div>
+          </div>
+
+          <div class="holo-badge holo-2">
+            <div class="holo-icon"><i class="fas fa-tshirt"></i></div>
+            <div class="holo-info">
+              <span class="holo-title">Fashion Concepts</span>
+              <span class="holo-desc">Moodboards &amp; Sketches</span>
+            </div>
+          </div>
+
+          <div class="holo-badge holo-3">
+            <div class="holo-icon"><i class="fas fa-palette"></i></div>
+            <div class="holo-info">
+              <span class="holo-title">Art Movements</span>
+              <span class="holo-desc">Bauhaus · Surrealism · Pop</span>
+            </div>
+          </div>
+
+          <div class="holo-badge holo-4">
+            <div class="holo-icon"><i class="fas fa-bolt"></i></div>
+            <div class="holo-info">
+              <span class="holo-title">Fast Delivery</span>
+              <span class="holo-desc">12h - 48h Deadlines</span>
+            </div>
+          </div>
+
+          <!-- Instant Photo Changer Helper -->
+          <label for="photoUploadInput" class="photo-change-btn" title="Click to preview your own photo">
+            <i class="fas fa-camera"></i>
+            <span>Swap Photo</span>
+            <input type="file" id="photoUploadInput" accept="image/*" style="display:none;" />
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down Prompt -->
+    <a href="#services" class="hero-scroll-cue">
+      <div class="mouse-icon">
+        <div class="wheel"></div>
+      </div>
+      <span>Explore Services</span>
+    </a>
+  </section>
+
+  <!-- ===== LIVE TICKER ===== -->
+  <div class="ticker-wrapper">
+    <div class="ticker-strip">
+      <div class="ticker-track">
+        <span><i class="fas fa-sparkles"></i> UNIVERSITY PRESENTATIONS</span>
+        <span>✦</span>
+        <span>FASHION DESIGN LOOKBOOKS</span>
+        <span>✦</span>
+        <span>ACADEMIC ASSIGNMENTS &amp; ESSAYS</span>
+        <span>✦</span>
+        <span>ART MOVEMENT ANALYSIS</span>
+        <span>✦</span>
+        <span>LUXURY BRAND IDENTITY</span>
+        <span>✦</span>
+        <span>SOCIAL MEDIA CONTENT STRATEGY</span>
+        <span>✦</span>
+        <span>PITCH DECKS &amp; CANVA DESIGN</span>
+        <span>✦</span>
+        <span>100% CONFIDENTIAL &amp; TURNITIN SAFE</span>
+        <span>✦</span>
+        <!-- Repeat for smooth loop -->
+        <span><i class="fas fa-sparkles"></i> UNIVERSITY PRESENTATIONS</span>
+        <span>✦</span>
+        <span>FASHION DESIGN LOOKBOOKS</span>
+        <span>✦</span>
+        <span>ACADEMIC ASSIGNMENTS &amp; ESSAYS</span>
+        <span>✦</span>
+        <span>ART MOVEMENT ANALYSIS</span>
+        <span>✦</span>
+        <span>LUXURY BRAND IDENTITY</span>
+        <span>✦</span>
+        <span>SOCIAL MEDIA CONTENT STRATEGY</span>
+        <span>✦</span>
+        <span>PITCH DECKS &amp; CANVA DESIGN</span>
+        <span>✦</span>
+        <span>100% CONFIDENTIAL &amp; TURNITIN SAFE</span>
+        <span>✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== STUDENT TRUST & ADVANTAGE BAR ===== -->
+  <section class="student-trust-section">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-card" data-tilt data-tilt-max="10">
+          <div class="trust-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="trust-body">
+            <h4>Turnitin Safe &amp; Original</h4>
+            <p>Every assignment, research paper, and slide deck is crafted completely from scratch with zero AI fluff or plagiarism.</p>
+          </div>
+        </div>
+
+        <div class="trust-card" data-tilt data-tilt-max="10">
+          <div class="trust-icon"><i class="fas fa-hourglass-start"></i></div>
+          <div class="trust-body">
+            <h4>Same-Day Rush Deadlines</h4>
+            <p>Stuck with a tomorrow morning submission? Emergency 12h &amp; 24h express slots available for fast relief.</p>
+          </div>
+        </div>
+
+        <div class="trust-card" data-tilt data-tilt-max="10">
+          <div class="trust-icon"><i class="fas fa-medal"></i></div>
+          <div class="trust-body">
+            <h4>Distinction / Top Grade Focus</h4>
+            <p>Flawless citations (APA, Harvard, Chicago, IEEE), visual infographics, and polished academic formatting.</p>
+          </div>
+        </div>
+
+        <div class="trust-card" data-tilt data-tilt-max="10">
+          <div class="trust-icon"><i class="fas fa-user-secret"></i></div>
+          <div class="trust-body">
+            <h4>Strict 100% Privacy</h4>
+            <p>Your university name, personal details, and work are handled with absolute confidentiality and discretion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <span class="section-kicker"><i class="fas fa-cube"></i> High-Level Expertise</span>
+        <h2 class="section-main-title">Specialized <span class="gradient-text">Freelance Services</span></h2>
+        <p class="section-sub-title">Engineered to elevate academic performance and brand aesthetics to global editorial standards.</p>
+      </div>
+
+      <div class="services-3d-grid">
+
+        <!-- 01: University Presentations -->
+        <div class="service-3d-card featured-service" data-tilt data-tilt-max="12" data-tilt-glare data-tilt-max-glare="0.2">
+          <div class="card-glow-layer"></div>
+          <div class="card-top">
+            <span class="service-num">01</span>
+            <div class="service-icon-box"><i class="fas fa-presentation-screen"></i></div>
+          </div>
+          <div class="card-badge">Most Requested by Students</div>
+          <h3 class="service-head">University Presentations &amp; Pitch Decks</h3>
+          <p class="service-desc">
+            Stop losing marks on boring slides. Get executive-grade PowerPoint, Canva, and Keynote decks with custom diagrams, data visualization, and speaker notes.
+          </p>
+          <ul class="service-feature-list">
+            <li><i class="fas fa-check"></i> High-impact visual slides with modern layout</li>
+            <li><i class="fas fa-check"></i> Seminar, Defense, &amp; Case Study decks</li>
+            <li><i class="fas fa-check"></i> Editable source files (.PPTX &amp; Canva link)</li>
+            <li><i class="fas fa-check"></i> Speaker notes included for confident presentation</li>
+          </ul>
+          <div class="service-action-row">
+            <span class="starting-price">From €13 (10 Slides)</span>
+            <a href="https://wa.me/923246714050?text=Hi%20Fahad,%20I%20need%20a%20University%20Presentation%20deck!" target="_blank" class="service-btn-direct">
+              Order Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 02: Academic Assignments & FYP Projects -->
+        <div class="service-3d-card" data-tilt data-tilt-max="12" data-tilt-glare data-tilt-max-glare="0.2">
+          <div class="card-glow-layer"></div>
+          <div class="card-top">
+            <span class="service-num">02</span>
+            <div class="service-icon-box"><i class="fas fa-book-open-reader"></i></div>
+          </div>
+          <div class="card-badge">Guaranteed A Grade</div>
+          <h3 class="service-head">Assignments, Reports &amp; FYP Projects</h3>
+          <p class="service-desc">
+            Complete academic project support across business, media, design, marketing, and arts. Well-researched, properly structured, and formatted.
+          </p>
+          <ul class="service-feature-list">
+            <li><i class="fas fa-check"></i> Thorough research &amp; clear academic structure</li>
+            <li><i class="fas fa-check"></i> Accurate citations &amp; references (APA / Harvard)</li>
+            <li><i class="fas fa-check"></i> Final Year Project (FYP) visual documentation</li>
+            <li><i class="fas fa-check"></i> Turnitin Plagiarism report verification</li>
+          </ul>
+          <div class="service-action-row">
+            <span class="starting-price">From €15 (3 Pages)</span>
+            <a href="https://wa.me/923246714050?text=Hi%20Fahad,%20I%20need%20help%20with%20an%20Assignment/Project!" target="_blank" class="service-btn-direct">
+              Order Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 03: Fashion Designing & Lookbooks -->
+        <div class="service-3d-card" data-tilt data-tilt-max="12" data-tilt-glare data-tilt-max-glare="0.2">
+          <div class="card-glow-layer"></div>
+          <div class="card-top">
+            <span class="service-num">03</span>
+            <div class="service-icon-box"><i class="fas fa-tshirt"></i></div>
+          </div>
+          <div class="card-badge">Couture &amp; Ready-to-Wear</div>
+          <h3 class="service-head">Fashion Designing &amp; Lookbooks</h3>
+          <p class="service-desc">
+            Catering to fashion students, designers, and apparel labels. From runway concept boards and digital sketches to technical flat drawings and lookbooks.
+          </p>
+          <ul class="service-feature-list">
+            <li><i class="fas fa-check"></i> Collection concept moodboards &amp; color stories</li>
+            <li><i class="fas fa-check"></i> High-fashion digital illustrations &amp; silhouettes</li>
+            <li><i class="fas fa-check"></i> Fabric swatch analysis &amp; texture exploration</li>
+            <li><i class="fas fa-check"></i> Editorial lookbook layout design</li>
+          </ul>
+          <div class="service-action-row">
+            <span class="starting-price">From €25 (2 Designs)</span>
+            <a href="https://wa.me/923246714050?text=Hi%20Fahad,%20I%20need%20Fashion%20Design%20/%20Lookbook%20services!" target="_blank" class="service-btn-direct">
+              Order Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 04: Art Movements & Visual Studies -->
+        <div class="service-3d-card" data-tilt data-tilt-max="12" data-tilt-glare data-tilt-max-glare="0.2">
+          <div class="card-glow-layer"></div>
+          <div class="card-top">
+            <span class="service-num">04</span>
+            <div class="service-icon-box"><i class="fas fa-palette"></i></div>
+          </div>
+          <div class="card-badge">Art &amp; Theory Specialist</div>
+          <h3 class="service-head">Art Movements &amp; Visual Studies</h3>
+          <p class="service-desc">
+            Deep contextual mastery of historic and modern art movements: Bauhaus, Surrealism, Cubism, Modernism, Pop Art, and Postmodern culture analysis.
+          </p>
+          <ul class="service-feature-list">
+            <li><i class="fas fa-check"></i> Curated art history research &amp; essays</li>
+            <li><i class="fas fa-check"></i> Art movement inspired visual compositions</li>
+            <li><i class="fas fa-check"></i> Museum exhibition catalogues &amp; poster designs</li>
+            <li><i class="fas fa-check"></i> Visual culture critique &amp; analysis decks</li>
+          </ul>
+          <div class="service-action-row">
+            <span class="starting-price">From €20 (2 Sections)</span>
+            <a href="https://wa.me/923246714050?text=Hi%20Fahad,%20I%20need%20an%20Art%20Movement%20/%20Visual%20study%20project!" target="_blank" class="service-btn-direct">
+              Order Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 05: Brand Identity & Graphic Direction -->
+        <div class="service-3d-card" data-tilt data-tilt-max="12" data-tilt-glare data-tilt-max-glare="0.2">
+          <div class="card-glow-layer"></div>
+          <div class="card-top">
+            <span class="service-num">05</span>
+            <div class="service-icon-box"><i class="fas fa-trademark"></i></div>
+          </div>
+          <div class="card-badge">Premium Branding</div>
+          <h3 class="service-head">Brand Identity &amp; Logo Architecture</h3>
+          <p class="service-desc">
+            Complete aesthetic branding systems for startups, student ventures, and corporate clients. From logo marks and typography to brand guidelines.
+          </p>
+          <ul class="service-feature-list">
+            <li><i class="fas fa-check"></i> Vector logos with versatile variations</li>
+            <li><i class="fas fa-check"></i> Comprehensive Brand Style Guide (PDF)</li>
+            <li><i class="fas fa-check"></i> Luxury stationery &amp; packaging mockups</li>
+            <li><i class="fas fa-check"></i> Full copyright ownership &amp; high-res vectors</li>
+          </ul>
+          <div class="service-action-row">
+            <span class="starting-price">From €35 (Logo &amp; Identity)</span>
+            <a href="https://wa.me/923246714050?text=Hi%20Fahad,%20I%20want%20a%20Brand%20Identity%20package!" target="_blank" class="service-btn-direct">
+              Order Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 06: Social Media Design & Media Curation -->
+        <div class="service-3d-card" data-tilt data-tilt-max="12" data-tilt-glare data-tilt-max-glare="0.2">
+          <div class="card-glow-layer"></div>
+          <div class="card-top">
+            <span class="service-num">06</span>
+            <div class="service-icon-box"><i class="fas fa-icons"></i></div>
+          </div>
+          <div class="card-badge">Viral &amp; Aesthetic</div>
+          <h3 class="service-head">Social Media Design &amp; Content</h3>
+          <p class="service-desc">
+            High-converting Instagram carousels, aesthetic story highlights, TikTok/Reels thumbnail covers, and comprehensive 30-day social media design bundles.
+          </p>
+          <ul class="service-feature-list">
+            <li><i class="fas fa-check"></i> Seamless swipe-through Instagram carousels</li>
+            <li><i class="fas fa-check"></i> High-conversion promotional banners</li>
+            <li><i class="fas fa-check"></i> Consistent aesthetic grid layout design</li>
+            <li><i class="fas fa-check"></i> Editable Canva templates for future posts</li>
+          </ul>
+          <div class="service-action-row">
+            <span class="starting-price">From €20 (5 Posts)</span>
+            <a href="https://wa.me/923246714050?text=Hi%20Fahad,%20I%20need%20Social%20Media%20Design%20kits!" target="_blank" class="service-btn-direct">
+              Order Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTERACTIVE 3D PRICE CALCULATOR ===== -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      <div class="calculator-box" data-tilt data-tilt-max="4" data-tilt-glare data-tilt-max-glare="0.1">
+        <div class="calc-header text-center">
+          <span class="section-kicker"><i class="fas fa-calculator"></i> Transparent Pricing</span>
+          <h2 class="calc-title">Instant Student <span class="gradient-text">Project Estimator</span></h2>
+          <p class="calc-desc">Configure your project requirements below to see an instant estimated quote. Click to send directly to WhatsApp with 1 tap!</p>
+        </div>
+
+        <div class="calc-body-grid">
+          
+          <!-- Controls Column -->
+          <div class="calc-controls">
+            
+            <!-- 1. Service Type -->
+            <div class="calc-group">
+              <label class="calc-label"><i class="fas fa-layer-group"></i> 1. Select Service Type:</label>
+              <div class="service-pill-selector" id="calcServiceSelector">
+                <button type="button" class="calc-pill active" data-service="presentation" data-base="13" data-unit="slide">
+                  <i class="fas fa-presentation-screen"></i> Presentation / Slides
+                </button>
+                <button type="button" class="calc-pill" data-service="assignment" data-base="15" data-unit="page">
+                  <i class="fas fa-file-lines"></i> Assignment / Report
+                </button>
+                <button type="button" class="calc-pill" data-service="fashion" data-base="25" data-unit="sketch">
+                  <i class="fas fa-tshirt"></i> Fashion / Lookbook
+                </button>
+                <button type="button" class="calc-pill" data-service="art" data-base="20" data-unit="piece">
+                  <i class="fas fa-palette"></i> Art Movement Study
+                </button>
+                <button type="button" class="calc-pill" data-service="brand" data-base="35" data-unit="asset">
+                  <i class="fas fa-trademark"></i> Brand Identity
+                </button>
+                <button type="button" class="calc-pill" data-service="social" data-base="20" data-unit="post">
+                  <i class="fas fa-hashtag"></i> Social Media Kit
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. Quantity / Volume Slider -->
+            <div class="calc-group">
+              <div class="slider-header">
+                <label class="calc-label" id="calcQuantityLabel"><i class="fas fa-sliders"></i> 2. Number of Slides:</label>
+                <span class="slider-val-badge" id="calcQuantityDisplay">10 Slides</span>
+              </div>
+              <input type="range" min="5" max="40" value="10" step="1" class="calc-slider" id="calcQuantitySlider"/>
+              <div class="slider-hints">
+                <span>Small (5)</span>
+                <span>Standard (15)</span>
+                <span>Comprehensive (40+)</span>
+              </div>
+            </div>
+
+            <!-- 3. Delivery Speed -->
+            <div class="calc-group">
+              <label class="calc-label"><i class="fas fa-clock"></i> 3. Delivery Speed / Deadline:</label>
+              <div class="speed-selector" id="calcSpeedSelector">
+                <label class="speed-card active">
+                  <input type="radio" name="deliverySpeed" value="standard" data-multiplier="1" checked />
+                  <span class="speed-content">
+                    <span class="speed-name">Standard (3-4 Days)</span>
+                    <span class="speed-tag">Recommended</span>
+                  </span>
+                </label>
+                <label class="speed-card">
+                  <input type="radio" name="deliverySpeed" value="express" data-multiplier="1.3" />
+                  <span class="speed-content">
+                    <span class="speed-name">Express (48 Hours)</span>
+                    <span class="speed-tag fast">+30%</span>
+                  </span>
+                </label>
+                <label class="speed-card">
+                  <input type="radio" name="deliverySpeed" value="rush" data-multiplier="1.6" />
+                  <span class="speed-content">
+                    <span class="speed-name">Emergency (24 Hours)</span>
+                    <span class="speed-tag urgent">+60% Rush</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 4. Add-on Options -->
+            <div class="calc-group">
+              <label class="calc-label"><i class="fas fa-plus-circle"></i> 4. Student Add-ons:</label>
+              <div class="addons-grid">
+                <label class="addon-check">
+                  <input type="checkbox" id="addonTurnitin" data-addon="5" />
+                  <span>Turnitin Official Plagiarism Report (+€5)</span>
+                </label>
+                <label class="addon-check">
+                  <input type="checkbox" id="addonSource" data-addon="0" checked />
+                  <span>Full Editable Source Files Included (Free)</span>
+                </label>
+                <label class="addon-check">
+                  <input type="checkbox" id="addonNotes" data-addon="5" />
+                  <span>Speaker Notes &amp; Q&amp;A Prep Script (+€5)</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Live Result Receipt Card -->
+          <div class="calc-receipt-wrap">
+            <div class="calc-receipt">
+              <div class="receipt-glow"></div>
+              
+              <div class="receipt-header">
+                <div class="receipt-logo"><i class="fas fa-file-invoice"></i> Live Estimate</div>
+                <span class="receipt-status"><i class="fas fa-shield-check"></i> Locked Rate</span>
+              </div>
+
+              <div class="receipt-summary">
+                <div class="receipt-row">
+                  <span class="r-label">Selected Service:</span>
+                  <span class="r-val" id="rService">University Presentation</span>
+                </div>
+                <div class="receipt-row">
+                  <span class="r-label">Deliverable Quantity:</span>
+                  <span class="r-val" id="rQuantity">10 Slides</span>
+                </div>
+                <div class="receipt-row">
+                  <span class="r-label">Delivery Timeline:</span>
+                  <span class="r-val" id="rSpeed">Standard (3-4 Days)</span>
+                </div>
+                <div class="receipt-row">
+                  <span class="r-label">Revisions:</span>
+                  <span class="r-val highlight">Free Unlimited Revisions</span>
+                </div>
+                <div class="receipt-row">
+                  <span class="r-label">Turnitin Guarantee:</span>
+                  <span class="r-val highlight">100% Original</span>
+                </div>
+              </div>
+
+              <div class="receipt-divider"></div>
+
+              <div class="receipt-total-block">
+                <span class="total-tag">ESTIMATED TOTAL</span>
+                <div class="total-price-row">
+                  <span class="currency">€</span>
+                  <span class="total-amount" id="calcTotalAmount">13</span>
+                </div>
+                <p class="total-subtext">*European student discount applied. Friendly rates &amp; milestone payment available (PayPal / Wise / SEPA / Bank Transfer).</p>
+              </div>
+
+              <a href="#" id="calcWhatsappOrderBtn" target="_blank" class="btn btn-whatsapp-direct">
+                <i class="fab fa-whatsapp"></i>
+                <span>Confirm &amp; Order on WhatsApp</span>
+              </a>
+
+              <div class="receipt-trust-icons">
+                <span><i class="fas fa-lock"></i> 100% Confidential</span>
+                <span><i class="fas fa-undo"></i> Free Edits</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO SHOWCASE ===== -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <span class="section-kicker"><i class="fas fa-sparkles"></i> Curated Gallery</span>
+        <h2 class="section-main-title">Selected <span class="gradient-text">Masterworks</span></h2>
+        <p class="section-sub-title">Explore real projects across academic slide decks, fashion lookbooks, art analysis, and branding.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="portfolio-filter-tabs">
+        <button type="button" class="p-tab active" data-filter="all">All Projects</button>
+        <button type="button" class="p-tab" data-filter="presentation">Academic &amp; Decks</button>
+        <button type="button" class="p-tab" data-filter="fashion">Fashion Design</button>
+        <button type="button" class="p-tab" data-filter="art">Art Movements</button>
+        <button type="button" class="p-tab" data-filter="brand">Branding &amp; Social</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- Item 1: Presentation & Research Deck -->
+        <div class="project-card" data-category="presentation" data-tilt data-tilt-max="8">
+          <div class="project-img-box">
+            <img src="images/project_presentation.jpg" alt="University Research Presentation" class="project-img"/>
+            <div class="project-overlay">
+              <button class="preview-btn" onclick="openModal('presentation-1')">
+                <i class="fas fa-magnifying-glass-plus"></i> View Details
+              </button>
+            </div>
+            <span class="project-tag-pill">University Presentation</span>
+          </div>
+          <div class="project-meta">
+            <span class="project-client">Global Climate Research · Seminar Deck</span>
+            <h3 class="project-title">Smart Sustainability: Bio-Integrated Carbon Capture</h3>
+            <p class="project-snippet">32-slide defense deck featuring custom clean vector charts, executive roadmap, and academic citations.</p>
+            <div class="project-software">
+              <span><i class="fab fa-microsoft"></i> PowerPoint</span>
+              <span><i class="fas fa-paint-brush"></i> Canva Pro</span>
+              <span><i class="fab fa-figma"></i> Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Fashion Design & Lookbook -->
+        <div class="project-card" data-category="fashion" data-tilt data-tilt-max="8">
+          <div class="project-img-box">
+            <img src="images/project_fashion.jpg" alt="Fashion Design Lookbook Moodboard" class="project-img"/>
+            <div class="project-overlay">
+              <button class="preview-btn" onclick="openModal('fashion-1')">
+                <i class="fas fa-magnifying-glass-plus"></i> View Details
+              </button>
+            </div>
+            <span class="project-tag-pill">Fashion Design</span>
+          </div>
+          <div class="project-meta">
+            <span class="project-client">Haute Couture Collection · Degree Portfolio</span>
+            <h3 class="project-title">The Archetype Colloquy - FW25 Collection</h3>
+            <p class="project-snippet">Complete silhouette sketches, fabric draping notes, runway illustrations, and collection moodboard concept.</p>
+            <div class="project-software">
+              <span><i class="fas fa-pen-nib"></i> Fashion Sketch</span>
+              <span><i class="fas fa-tshirt"></i> Fabric Tech</span>
+              <span><i class="fab fa-adobe"></i> Illustrator</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Art Movements & Contemporary Visuals -->
+        <div class="project-card" data-category="art" data-tilt data-tilt-max="8">
+          <div class="project-img-box">
+            <img src="images/project_art.jpg" alt="Art Movement Visual Exhibition" class="project-img"/>
+            <div class="project-overlay">
+              <button class="preview-btn" onclick="openModal('art-1')">
+                <i class="fas fa-magnifying-glass-plus"></i> View Details
+              </button>
+            </div>
+            <span class="project-tag-pill">Art Movements</span>
+          </div>
+          <div class="project-meta">
+            <span class="project-client">Visual Arts Study · Art History Exhibition</span>
+            <h3 class="project-title">Bauhaus Meets Surrealism: Converging Visions</h3>
+            <p class="project-snippet">In-depth contextual study comparing Walter Gropius and Salvador Dalí with custom visual culture layouts and posters.</p>
+            <div class="project-software">
+              <span><i class="fas fa-palette"></i> Art Theory</span>
+              <span><i class="fab fa-adobe"></i> Photoshop</span>
+              <span><i class="fas fa-book"></i> Essay Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Brand Identity & Packaging -->
+        <div class="project-card" data-category="brand" data-tilt data-tilt-max="8">
+          <div class="project-img-box">
+            <img src="images/project_branding.jpg" alt="Luxury Brand Identity" class="project-img"/>
+            <div class="project-overlay">
+              <button class="preview-btn" onclick="openModal('brand-1')">
+                <i class="fas fa-magnifying-glass-plus"></i> View Details
+              </button>
+            </div>
+            <span class="project-tag-pill">Brand Identity</span>
+          </div>
+          <div class="project-meta">
+            <span class="project-client">Aura &amp; Co. · Luxury Goods</span>
+            <h3 class="project-title">Aura &amp; Co. Minimalist Brand Architecture</h3>
+            <p class="project-snippet">Rose-gold foil embossing, matte dark packaging, typography guidelines, and complete corporate stationery system.</p>
+            <div class="project-software">
+              <span><i class="fas fa-gem"></i> Logo Mark</span>
+              <span><i class="fas fa-box"></i> Packaging</span>
+              <span><i class="fab fa-adobe"></i> Illustrator</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Social Media Strategy & Kit -->
+        <div class="project-card" data-category="brand" data-tilt data-tilt-max="8">
+          <div class="project-img-box">
+            <img src="images/project_social.jpg" alt="Social Media Content Kit" class="project-img"/>
+            <div class="project-overlay">
+              <button class="preview-btn" onclick="openModal('social-1')">
+                <i class="fas fa-magnifying-glass-plus"></i> View Details
+              </button>
+            </div>
+            <span class="project-tag-pill">Social Media</span>
+          </div>
+          <div class="project-meta">
+            <span class="project-client">Golden Hour Boutique · Instagram Editorial</span>
+            <h3 class="project-title">Golden Hour: Editorial Carousel &amp; Story Kit</h3>
+            <p class="project-snippet">30-day cohesive aesthetic social media framework with seamless carousels, reel covers, and shopping story highlights.</p>
+            <div class="project-software">
+              <span><i class="fab fa-instagram"></i> Instagram Grid</span>
+              <span><i class="fas fa-sliders"></i> Canva System</span>
+              <span><i class="fas fa-film"></i> Reels Cover</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Academic Case Study Presentation -->
+        <div class="project-card" data-category="presentation" data-tilt data-tilt-max="8">
+          <div class="project-img-box">
+            <img src="images/project_presentation.jpg" alt="Business Case Study Presentation" class="project-img" style="filter: hue-rotate(45deg);"/>
+            <div class="project-overlay">
+              <button class="preview-btn" onclick="openModal('presentation-2')">
+                <i class="fas fa-magnifying-glass-plus"></i> View Details
+              </button>
+            </div>
+            <span class="project-tag-pill">Academic Project</span>
+          </div>
+          <div class="project-meta">
+            <span class="project-client">MBA Marketing Case Study · Distinction Grade</span>
+            <h3 class="project-title">Market Disruption &amp; Consumer Sentiment Analysis</h3>
+            <p class="project-snippet">Comprehensive 45-page visual report converted into a top-rated presentation with SWOT, Porter's Five Forces, and KPI graphs.</p>
+            <div class="project-software">
+              <span><i class="fas fa-chart-pie"></i> Data Viz</span>
+              <span><i class="fas fa-file-powerpoint"></i> PPTX</span>
+              <span><i class="fas fa-award"></i> Grade A+</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MODAL FOR PORTFOLIO PREVIEW ===== -->
+  <div class="portfolio-modal" id="portfolioModal">
+    <div class="modal-backdrop" onclick="closeModal()"></div>
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-content" id="modalDynamicContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ME / PROFILE SECTION ===== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid-layout">
+        
+        <!-- Left: 3D Visual Box -->
+        <div class="about-col-visual">
+          <div class="about-card-layered" data-tilt data-tilt-max="10">
+            <div class="about-img-frame">
+              <img src="profile.jpg" alt="Fahad Faisal" class="about-photo" id="aboutProfilePic" onerror="this.onerror=null; this.src='images/project_fashion.jpg';"/>
+              <div class="about-frame-border"></div>
+            </div>
+            <div class="floating-stat-card">
+              <span class="stat-badge-num">100%</span>
+              <span class="stat-badge-txt">Grade Satisfaction &amp; Timely Delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Bio Content -->
+        <div class="about-col-info">
+          <span class="section-kicker"><i class="fas fa-user-astronaut"></i> The Creator Behind The Work</span>
+          <h2 class="about-title">Bridging High Art, Fashion &amp; <span class="gradient-text">Academic Distinction</span></h2>
+          
+          <p class="about-paragraph">
+            Hi, I’m <strong>Fahad Faisal</strong>. As someone deeply embedded in visual arts, fashion design, media culture, and academic research, 
+            I discovered that both students and brands often face the same hurdle: <em>how to communicate their complex ideas with jaw-dropping elegance and authority.</em>
+          </p>
+
+          <p class="about-paragraph">
+            Whether you are a university student racing against an impossible deadline who needs an <strong>A+ grade presentation or research assignment</strong>, 
+            or a fashion/brand entrepreneur seeking lookbooks and social media perfection — I deliver bespoke work that stands out instantly.
+          </p>
+
+          <!-- Skills Badges Grid -->
+          <div class="skills-highlight-grid">
+            <div class="skill-chip"><i class="fab fa-microsoft"></i> PowerPoint &amp; Decks</div>
+            <div class="skill-chip"><i class="fas fa-paint-brush"></i> Canva Pro Master</div>
+            <div class="skill-chip"><i class="fab fa-adobe"></i> Photoshop &amp; Illustrator</div>
+            <div class="skill-chip"><i class="fab fa-figma"></i> Figma UI &amp; Layout</div>
+            <div class="skill-chip"><i class="fas fa-tshirt"></i> Fashion Sketching &amp; Flats</div>
+            <div class="skill-chip"><i class="fas fa-book-bookmark"></i> APA &amp; Harvard Referencing</div>
+            <div class="skill-chip"><i class="fas fa-hashtag"></i> Social Media Curation</div>
+            <div class="skill-chip"><i class="fas fa-shield-virus"></i> Turnitin Plagiarism Check</div>
+          </div>
+
+          <div class="about-actions">
+            <a href="https://wa.me/923246714050?text=Hi%20Fahad,%20I%20would%20love%20to%20discuss%20a%20project%20with%20you!" target="_blank" class="btn btn-primary">
+              <i class="fab fa-whatsapp"></i> Chat with Fahad Directly
+            </a>
+            <a href="#services" class="btn btn-outline">
+              Explore All Services <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS / STUDENT REVIEWS ===== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <span class="section-kicker"><i class="fas fa-comments"></i> Real Feedback</span>
+        <h2 class="section-main-title">Student &amp; Client <span class="gradient-text">Testimonials</span></h2>
+        <p class="section-sub-title">See why university students and brand founders trust Fahad for their most critical deadlines.</p>
+      </div>
+
+      <div class="testimonials-3d-grid">
+        
+        <div class="review-card" data-tilt data-tilt-max="10">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "I had only 18 hours before my final Marketing Defense seminar. Fahad transformed my raw notes into a 25-slide presentation that literally stunned my professors. Got a straight <strong>A grade</strong>! Life saver!"
+          </p>
+          <div class="review-author">
+            <div class="author-avatar"><i class="fas fa-graduation-cap"></i></div>
+            <div class="author-info">
+              <span class="author-name">Sara Rehman</span>
+              <span class="author-meta">BBA Student · LUMS University</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card featured-review" data-tilt data-tilt-max="10">
+          <div class="review-badge-top">Top Rated Review</div>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "Fahad’s understanding of Art Movements (Bauhaus &amp; Surrealism) is mind-blowing. My art history project was submitted with a Turnitin report of only 2% similarity. Clean references, gorgeous formatting, highly recommended."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar"><i class="fas fa-palette"></i></div>
+            <div class="author-info">
+              <span class="author-name">Zainab Malik</span>
+              <span class="author-meta">Fine Arts Major · NCA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-tilt data-tilt-max="10">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "His fashion sketches and moodboard for my Autumn/Winter collection project exceeded all my expectations. The fabrics and color story were on point. Will definitely hire again for next semester!"
+          </p>
+          <div class="review-author">
+            <div class="author-avatar"><i class="fas fa-tshirt"></i></div>
+            <div class="author-info">
+              <span class="author-name">Hamza Tariq</span>
+              <span class="author-meta">Fashion Design Student · PIFD</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION (IMPORTANT FOR STUDENTS) ===== -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <span class="section-kicker"><i class="fas fa-question-circle"></i> Got Questions?</span>
+        <h2 class="section-main-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <p class="section-sub-title">Everything you need to know about placing an order, payments, and revisions.</p>
+      </div>
+
+      <div class="faq-accordion-container">
+        
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>How does the process work for a university presentation or assignment?</span>
+            <i class="fas fa-chevron-down faq-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p>It’s super simple! You send your topic guidelines, rubric, or assignment outline via WhatsApp or the contact form. We confirm the deadline and price quote. Once agreed, Fahad delivers the complete work on time, and any revisions you want are done free of charge.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is my privacy and university identity kept completely confidential?</span>
+            <i class="fas fa-chevron-down faq-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, 100%. We never share your student details, university name, or project content with third parties. Your personal information stays strictly private.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What if my professor requests changes or adjustments?</span>
+            <i class="fas fa-chevron-down faq-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Every project includes free revisions. Just forward your teacher's feedback or comments, and we will update the slides, formatting, or text promptly until you and your instructor are completely satisfied.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can you handle urgent rush deadlines (under 24 hours)?</span>
+            <i class="fas fa-chevron-down faq-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We have dedicated emergency rush slots for same-day and 24-hour deliveries. Reach out directly on WhatsApp with the keyword "URGENT" for immediate response.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What payment methods do you accept?</span>
+            <i class="fas fa-chevron-down faq-arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We accept PayPal, Wise, SEPA Bank Transfer (Eurozone / IBAN), Revolut, Stripe / Card, EasyPaisa, and JazzCash for international and domestic students.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        
+        <div class="contact-header text-center">
+          <span class="section-kicker"><i class="fas fa-paper-plane"></i> Let's Connect</span>
+          <h2 class="contact-heading">Ready to Secure Your <span class="gradient-text">Top Grade</span>?</h2>
+          <p class="contact-sub">Drop your project details below or reach out directly on WhatsApp for an immediate response.</p>
+        </div>
+
+        <div class="contact-grid-inner">
+          
+          <!-- Direct Channels -->
+          <div class="contact-cards-side">
+            
+            <a href="https://wa.me/923246714050?text=Hello%20Fahad,%20I%20have%20a%20project%20inquiry!" target="_blank" class="contact-method-card wa-special">
+              <div class="method-icon"><i class="fab fa-whatsapp"></i></div>
+              <div class="method-text">
+                <span class="method-label">WhatsApp (PK / Direct)</span>
+                <span class="method-value">+92 324 6714050</span>
+                <span class="method-badge">Available 24/7 · Typical reply in 10 mins</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/905078727178?text=Hello%20Fahad,%20I%20have%20an%20international%20project%20inquiry!" target="_blank" class="contact-method-card wa-special">
+              <div class="method-icon"><i class="fab fa-whatsapp"></i></div>
+              <div class="method-text">
+                <span class="method-label">WhatsApp / Intl Direct</span>
+                <span class="method-value">+90 507 872 7178</span>
+                <span class="method-badge">Direct Line for Overseas Students</span>
+              </div>
+            </a>
+
+            <a href="mailto:faisalfahad051@gmail.com" class="contact-method-card">
+              <div class="method-icon"><i class="fas fa-envelope"></i></div>
+              <div class="method-text">
+                <span class="method-label">Official Email</span>
+                <span class="method-value">faisalfahad051@gmail.com</span>
+                <span class="method-badge">For detailed syllabi &amp; brief files</span>
+              </div>
+            </a>
+
+            <a href="https://instagram.com/m_fahad_faysal" target="_blank" class="contact-method-card">
+              <div class="method-icon"><i class="fab fa-instagram"></i></div>
+              <div class="method-text">
+                <span class="method-label">Instagram Direct</span>
+                <span class="method-value">@m_fahad_faysal</span>
+                <span class="method-badge">Portfolio highlights &amp; aesthetics</span>
+              </div>
+            </a>
+
+            <div class="contact-method-card">
+              <div class="method-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="method-text">
+                <span class="method-label">Location</span>
+                <span class="method-value">Pakistan · Serving Global Universities</span>
+                <span class="method-badge">Online Delivery Nationwide &amp; Abroad</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact / Inquiry Form -->
+          <div class="contact-form-side">
+            <form class="student-inquiry-form" id="studentContactForm">
+              
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label>Your Name *</label>
+                  <input type="text" id="formName" placeholder="e.g. Ali Khan" required />
+                </div>
+                <div class="form-field">
+                  <label>WhatsApp Number / Phone *</label>
+                  <input type="tel" id="formPhone" placeholder="e.g. +92 300 0000000" required />
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label>Service Needed *</label>
+                  <select id="formService" required>
+                    <option value="" disabled selected>Select category...</option>
+                    <option value="University Presentation">University Presentation / Pitch Deck</option>
+                    <option value="Academic Assignment">Academic Assignment / Research Paper</option>
+                    <option value="Fashion Designing">Fashion Design / Moodboard / Sketches</option>
+                    <option value="Art Movements">Art Movement Analysis / Visual Essay</option>
+                    <option value="Brand Identity">Brand Identity / Logo Package</option>
+                    <option value="Social Media">Social Media Design / Content</option>
+                    <option value="Other">Other Custom Work</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label>Urgency / Deadline *</label>
+                  <select id="formDeadline" required>
+                    <option value="Normal (3-5 days)">Normal (3-5 days)</option>
+                    <option value="Urgent (48 hours)">Urgent (48 hours)</option>
+                    <option value="Emergency (24 hours)">Emergency (Within 24 hours)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label>Project Details / Topic / Instructions *</label>
+                <textarea id="formMessage" rows="4" placeholder="Briefly explain your topic, number of slides/pages, or specific requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-btn" id="submitFormBtn">
+                <span>Submit &amp; Send to WhatsApp</span>
+                <i class="fab fa-whatsapp"></i>
+              </button>
+
+              <p class="form-disclaimer"><i class="fas fa-lock"></i> All information submitted is strictly confidential.</p>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">F<span class="accent-dot">.</span>FAHAD</span>
+          <p class="footer-tagline">
+            High-Impact Academic Project Support, Fashion Conception &amp; Editorial Media Direction.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#calculator">Price Calculator</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Services</h4>
+          <a href="#services">Presentations</a>
+          <a href="#services">Assignments &amp; FYP</a>
+          <a href="#services">Fashion Lookbooks</a>
+          <a href="#services">Art Movements</a>
+          <a href="#services">Brand Identity</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Student Support</h4>
+          <a href="#contact">WhatsApp Direct</a>
+          <a href="#calculator">Student Rates</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Fahad Faisal. All rights reserved. Crafted for excellence &amp; high grades.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/923246714050" target="_blank" aria-label="WhatsApp (PK)"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/905078727178" target="_blank" aria-label="WhatsApp (Intl)"><i class="fas fa-phone-volume"></i></a>
+          <a href="mailto:faisalfahad051@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://instagram.com/m_fahad_faysal" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WHATSAPP BUTTON (FAB) ===== -->
+  <div class="floating-whatsapp-fab">
+    <a href="https://wa.me/923246714050?text=Hi%20Fahad,%20I%20have%20an%20urgent%20inquiry%20regarding%20my%20assignment/project!" target="_blank" class="fab-btn" id="fabWhatsapp">
+      <span class="fab-pulse"></span>
+      <i class="fab fa-whatsapp"></i>
+      <span class="fab-tooltip">Chat on WhatsApp · Online</span>
+    </a>
+  </div>
+
+  <!-- Third-party CDN Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+  <!-- Application Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
