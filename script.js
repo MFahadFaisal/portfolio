@@ -332,7 +332,7 @@ function initPricingCalculator() {
     );
 
     if (whatsappOrderBtn) {
-      whatsappOrderBtn.href = `https://wa.me/923246714050?text=${waText}`;
+      whatsappOrderBtn.href = `https://wa.me/923246714059?text=${waText}`;
     }
   }
 
@@ -471,7 +471,7 @@ window.openModal = function(projectId) {
         </div>
 
         <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-          <a href="https://wa.me/923246714050?text=Hi%20Fahad,%20I%20saw%20your%20project%20'${encodeURIComponent(data.title)}'%20and%20want%20something%20similar!" target="_blank" class="btn btn-primary">
+          <a href="https://wa.me/923246714059?text=Hi%20Fahad,%20I%20saw%20your%20project%20'${encodeURIComponent(data.title)}'%20and%20want%20something%20similar!" target="_blank" class="btn btn-primary">
             <i class="fab fa-whatsapp"></i> Request Similar Project
           </a>
           <button onclick="closeModal()" class="btn btn-outline">Close Preview</button>
@@ -608,7 +608,7 @@ function initContactForm() {
       `Please let me know your availability!`
     );
 
-    window.open(`https://wa.me/923246714050?text=${waMsg}`, '_blank');
+    window.open(`https://wa.me/923246714059?text=${waMsg}`, '_blank');
   });
 }
 

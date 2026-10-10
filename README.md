@@ -13,7 +13,7 @@ Visit the live portfolio: **[https://mfahadfaisal.github.io/portfolio/](https://
 - **Glassmorphism UI & 3D Tilt**: 60fps card perspectives with specular glare effects.
 
 ## 📞 Contact Channels
-- **WhatsApp (PK)**: [+92 324 6714050](https://wa.me/923246714050)
+- **WhatsApp (PK)**: [+92 324 6714059](https://wa.me/923246714059)
 - **WhatsApp (Intl)**: [+90 507 872 7178](https://wa.me/905078727178)
 - **Email**: [faisalfahad051@gmail.com](mailto:faisalfahad051@gmail.com)
 - **Instagram**: [@m_fahad_faysal](https://instagram.com/m_fahad_faysal)
